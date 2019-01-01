@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Update Score</title>
+    </head>
+    <body>
+        <h1>Update Score</h1>
+        
+        <form action="/update/{{score.id}}" method="POST">
+            Team 1:<input type="text" name="team1" id="team1" value="{{score.team1}}" required> <br>
+            Team 2:<input type="text" name="team2" id="team2" value="{{score.team2}}" required> <br>
+            Score:<input type="text" name="score" id="score" value="{{score.score}}" required> <br>
+            <input type="submit" name="submit" value="Update score">
+        </form>
+
+    </body>
+</html>
